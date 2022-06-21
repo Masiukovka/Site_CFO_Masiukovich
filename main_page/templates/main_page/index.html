@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+{% for item in main_page %}
+    <div>
+        <p>{{item.title}}</p>
+
+        <p>{{item.content}}</p>
+    </div>
+    <hr>
+{% endfor %}
+
+</body>
+</html>
