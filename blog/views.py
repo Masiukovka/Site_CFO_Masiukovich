@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .models import Blog
+
 
 def index(request):
-    return HttpResponse("Старт Блога в Django")
-
-def about_me(request):
-    return HttpResponse("Страница обо мне")
+    blog = Blog.objects.all()
+    return render(request, 'blog/index.html', {'blog': blog, 'title': "Мой блог"})

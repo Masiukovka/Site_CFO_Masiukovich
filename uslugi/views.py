@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .models import Uslugi
+
 
 def index(request):
-    return HttpResponse("Старт Услуг в Django")
+    uslugi = Uslugi.objects.all()
+    return render(request, 'uslugi/index.html', {'uslugi': uslugi, 'title': "Для финансового благополучия Вашего бизнеса"})
