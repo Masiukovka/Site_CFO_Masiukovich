@@ -8,7 +8,6 @@ class About_me(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Стартовый блок'
-        verbose_name_plural = 'Стартовые блоки'
+        verbose_name = 'Период'
+        verbose_name_plural = 'Периоды'
 
-# Create your models here.
