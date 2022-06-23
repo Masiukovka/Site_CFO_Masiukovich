@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'uslugi.apps.UslugiConfig',
     'main_page.apps.MainPageConfig',
+    'about_me.apps.AboutMeConfig',
 ]
 
 MIDDLEWARE = [
