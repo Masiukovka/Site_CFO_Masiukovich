@@ -29,3 +29,10 @@ class Category(models.Model):
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
         ordering = ['title']
+
+
+from django.db import models
+
+
+class Name(models.Model):
+    name = models.CharField(max_length=100)
